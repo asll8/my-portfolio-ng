@@ -1,0 +1,15 @@
+<section id="projects">
+    <img src="assets/images/clipboard.png" alt="Clipboard Icon" />
+    <h2>Featured Work</h2>
+    <div class="project-container">
+        <div *ngFor="let project of projects" class="project-card">
+        <h2>{{ project.title }}</h2>
+        <h3>{{ project.subtitle }}</h3>
+        <p class="description">{{ project.description }}</p>
+        <p class="key-impact">{{ project.keyImpact }}</p>
+        <div class="tech-stack">
+            <span *ngFor="let tech of project.techStack">{{ tech }}</span>
+        </div>
+        </div>
+    </div>
+</section>
